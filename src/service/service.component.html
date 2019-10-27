@@ -1,0 +1,16 @@
+<table class="table table-striped">
+        <thead class="thead-default">
+        <tr>
+          <th>id</th>
+          <th>Titre Livre</th>
+          <th>Auteur</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let livre of livres; let i = index" [attr.data-index]="i">
+                <td>{{i}}</td>
+                <td>{{livres.titre}}</td>
+                <td>{{livres.nomAuteur}}</td>
+        </tr>
+        </tbody>
+    </table>
